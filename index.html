@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/cafa440bca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./images/logo-round-png.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tiger Clone</title>
+  </head>
+
+  <body>
+    <!-- ============== search row =============== -->
+    <div class="search-bar" id="search-bar">
+      <div class="search-btn-div" id="search-btn-div">
+        <div class="search-icons">
+          <p>search</p>
+          <i class="bx bx-search"></i>
+        </div>
+      </div>
+      <div class="search-input-div">
+        <input type="text" placeholder="search" />
+        <p>search</p>
+        <div class="close" id="close">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============== menu =============== -->
+    <div class="menu" id="menu1">
+      <!-- ============== who wer are menu  =============== -->
+      <div class="who-mneu">
+        <div class="who-contente">
+          <div class="who-col1">
+            <h6>About WWF</h6>
+            <ul>
+              <li><a href="#">Our annual review</a></li>
+              <li><a href="#">Our President</a></li>
+              <li><a href="#">Trustees</a></li>
+              <li><a href="#">Our environmental performance</a></li>
+              <li><a href="#">WWF Scotland</a></li>
+              <li><a href="#">WWF Cymru</a></li>
+            </ul>
+          </div>
+          <div class="who-col2">
+            <h6>The Living Planet Center</h6>
+          </div>
+        </div>
+      </div>
+      <!-- ============== nav bar =============== -->
+      <div class="mneu-contne">
+        <div class="pand-mneu">
+          <div class="panda">
+            <img src="./images/wwf-logo.svg" alt="" />
+          </div>
+          <ul>
+            <li><a href="#">learn</a></li>
+            <li>
+              <a href="#">where we work</a>
+            </li>
+            <li>
+              <a href="#">what we do</a>
+            </li>
+            <li id="who-menu-link">
+              <a href="#">who we are</a><i class="ri-arrow-down-s-fill"></i>
+            </li>
+            <li>
+              <a href="#">success stories</a>
+            </li>
+            <li>
+              <a href="#">what you can do</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dontate-div">
+          <a href="#">adopt</a>
+          <a href="#">donate</a>
+          <a href="#">memebership</a>
+        </div>
+      </div>
+    </div>
+    <!-- ============== youtube video window =============== -->
+    <div class="youtube" id="bg">
+      <div class="contan">
+        <div class="bg">
+          <iframe
+            class="ytframe"
+            width="831"
+            height="468"
+            src="https://www.youtube.com/embed/izw2xqwIGgs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- ============== hero =============== -->
+    <div class="hero">
+      <div class="hero-left">
+        <p>TIGERS: POSSIBLY</p>
+        <p>OUR PLANET'S MOST</p>
+        <p>ICONIC BIG CAT</p>
+        <p id="ligher">
+          There are only around 3,900 tigers in the wild. With the support of
+          Tiger Protectors around the world, they are beginning to make a
+          comeback.
+        </p>
+        <div class="adobt-btn">adopt a tiger</div>
+      </div>
+      <div class="hero-righ">
+        <div class="play-vid-btn" id="play-vid">PLAY</div>
+      </div>
+    </div>
+    <!-- ============== menu2 =============== -->
+    <div class="menu2">
+      <div class="menu2-content">
+        <div class="left-menu">
+          <ul>
+            <li><a href="#">all about tigers</a></li>
+            <li><a href="#">why they're important</a></li>
+            <li><a href="#">meet the tiger prtectors</a></li>
+            <li><a href="#">how we're helping</a></li>
+          </ul>
+        </div>
+        <div class="share-div">
+          <div class="share-this">share this</div>
+          <div class="social-links">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bx-envelope"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============== section 1 =============== -->
+    <div class="section1">
+      <div class="left-section1">
+        <h3>TIGER SPECIES:</h3>
+        <h6>TIGER</h6>
+
+        <div class="buttons-div">
+          <div class="btn-sec end">
+            <i class="fas fa-exclamation-triangle"></i>ENDANGERED (AROUND 3900
+            REMAIN)
+          </div>
+          <div class="btn-sec pan">PANTHERA TIGRIS</div>
+        </div>
+        <p>
+          <i class="ri-price-tag-3-fill"></i>
+          Affected by: Illegal wildlife trade , Human wildlife conflict ,
+          Habitat loss and fragmentation
+        </p>
+        <p>
+          The beautiful, awe-inspiring tiger is one of our planet’s most iconic
+          animals. But here’s the shocking truth. Wild tiger numbers dropped by
+          more than 95% since the beginning of the 20th century. Now, for the
+          first time in conservation history, their numbers are on the increase.
+        </p>
+        <p>
+          We aim to help double the number of wild tigers to over 6,000 by 2022
+          – the next Chinese year of the tiger.
+        </p>
+        <p>
+          In recent years, conservation work and the commitment of various
+          governments has halted the decline in global tiger numbers. But
+          there’s a lot more work to do.
+        </p>
+        <p>
+          We’re working closely with governments and community groups across
+          Asia – and your support is crucial, as always. Will you join us and
+          help protect this amazing wild cat?
+        </p>
+      </div>
+      <div class="right-sections1">
+        <img src="./images/sec1.jpg" alt="" />
+      </div>
+    </div>
+    <!-- ============== section 2 =============== -->
+    <div class="section2">
+      <div class="left2">
+        <img src="./images/sec2.jpg" alt="" />
+      </div>
+      <div class="right2">
+        <h6>Becci May</h6>
+        <p>Tigers & asian species regional manager</p>
+        <p>
+          "I am proud to be engaged in supporting our work on tigers, at such an
+          unprecedented and exciting time in history where wild tiger numbers
+          are starting to increase globally. In my lifetime, tiger populations
+          declined, but are now on the up. That’s quite incredible. However, the
+          threats remain, and we need to do all we can to help achieve the very
+          ambitious goal of doubling the number of tigers in the wild by 2022 –
+          a goal which was set in 2010 when the wild tiger population was at an
+          all-time low."
+        </p>
+      </div>
+    </div>
+    <!-- ============== section 3 =============== -->
+    <div class="section1">
+      <div class="left-section1">
+        <h3>WHERE TIGERS LIVE</h3>
+
+        <p>
+          Tigers used to roam across most of Asia, but now they’re restricted to
+          just 7% of their original range, in isolated forests and grasslands
+          across 13 countries.
+        </p>
+      </div>
+      <div class="right-sections1">
+        <img src="./images/sec3.jpg" alt="" />
+      </div>
+    </div>
+    <!-- ============== section 4 =============== -->
+    <div class="section2">
+      <div class="left2">
+        <img src="./images/sec4.jpg" alt="" />
+      </div>
+      <div class="left-section1">
+        <h3>WHY TIGERS ARE SO IMPORTANT</h3>
+
+        <p>As top predators, tigers help to keep their environment healthy.</p>
+        <p>
+          It’s the way things naturally work in the wild – the predators prey on
+          other animals, in this case herbivores (plant-eaters) such as deer.
+          But without enough tigers to eat them, herbivores can overgraze and
+          damage the land, disrupting the balance of the local environment.
+        </p>
+        <p>
+          Local people also depend on a healthy environment for food, water and
+          lots of other resources. By helping protect tigers we’re also helping
+          look after the places where they live, which is good for all the
+          people and wildlife sharing that environment.
+        </p>
+        <div class="sing-up-btn"><span>adopt </span></div>
+      </div>
+    </div>
+    <!-- ============== meet our heros slider =============== -->
+    <div class="meet">
+      <div class="hero-div">
+        <!-- <img src="./images/rect2.jpg" alt="" /> -->
+      </div>
+      <div class="meet-others-div"></div>
+    </div>
+    <!-- ============== recommendations =============== -->
+    <div class="rec-conatiner footer-container">
+      <h2>WE ALSO RECOMMEND:</h2>
+      <div class="pics-container">
+        <div class="pic-div">
+          <img src="./images/go1.jpg" alt="" />
+          <div class="pic-title">african lion</div>
+        </div>
+        <div class="pic-div">
+          <img src="./images/go2.jpg" alt="" />
+          <div class="pic-title">african lion</div>
+        </div>
+        <div class="pic-div">
+          <img src="./images/go3.jpg" alt="" />
+          <div class="pic-title">african lion</div>
+        </div>
+        <div class="pic-div">
+          <img src="./images/go4.jpg" alt="" />
+          <div class="pic-title">african lion</div>
+        </div>
+      </div>
+    </div>
+    <!-- ============== sign up =============== -->
+    <div class="sing-up-contianer footer-container">
+      <h2>FOR A FUTURE WHERE PEOPLE AND NATURE THRIVE</h2>
+      <h4>JOIN THE FIGHT FOR YOUR WORLD</h4>
+      <p>
+        Sign up to be kept informed about our conservation work and how you can
+        help such as fundraising, campaigning and events. You can unsubscribe at
+        any time.
+      </p>
+      <div class="sing-up-btn"><span>sign up</span></div>
+    </div>
+    <!-- ============== footer =============== -->
+    <div class="footer-container">
+      <div class="footer" id="Contact">
+        <div class="footer-col">
+          <h4>ABOUT WWF</h4>
+          <ul>
+            <li><a href="#">Knowledge Hub</a></li>
+            <li><a href="#">Our annual review</a></li>
+            <li><a href="#">Living Planet Centre</a></li>
+            <li><a href="#">Trustees</a></li>
+            <li><a href="#">Press contacts</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>LEGAL</h4>
+          <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Privacy and Data Protection</a></li>
+            <li><a href="#">Annual Report and Financial Statements</a></li>
+            <li><a href="#">Gender Pay Gap report</a></li>
+            <li><a href="#">Modern Slavery Statement</a></li>
+            <li><a href="#">Safeguarding Children policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>OUR UK OFFICES</h4>
+          <ul>
+            <li><a href="#">Living Planet Centre</a></li>
+            <li><a href="#">Scotland</a></li>
+            <li><a href="#">Wales</a></li>
+            <li><a href="#">Cymru</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>GET INVOLVED</h4>
+          <ul>
+            <li><a href="#">Join us</a></li>
+            <li><a href="#">Adopt an animal</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Fundraise</a></li>
+            <li><a href="#">Earth Hour</a></li>
+            <li><a href="#">Footprint calculator</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">FShopAQs</a></li>
+            <li><a href="#">Philanthropy</a></li>
+            <li><a href="#">Leave a gift in your will</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ============== follow us =============== -->
+    <div class="follow-us">
+      <div class="follow-tex">follow us</div>
+      <div class="social-links">
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-youtube"></i>
+        <i class="bx bxl-linkedin"></i>
+        <i class="bx bxl-tiktok"></i>
+      </div>
+    </div>
+    <!-- ============== signature =============== -->
+
+    <div class="signature">
+      <div class="dontate-div">
+        <a href="#">adopt</a>
+        <a href="#">join</a>
+        <a href="#">donate</a>
+      </div>
+      <div class="slogan-div">
+        <div class="logo-div">
+          <img src="./images/wwf-logo.svg" alt="" />
+        </div>
+        <p class="slogan-text">
+          WWF-UK is a registered charity in England and Wales 1081247 and in
+          Scotland SC039593 and a company limited by guarantee registered in
+          England and Wales 4016725. Registered office: The Living Planet
+          Centre, Rufford House, Brewery Road, Woking, Surrey, GU21 4LL
+        </p>
+      </div>
+      <div class="empty"></div>
+    </div>
+    <!-- ============== sticky note =============== -->
+    <div class="sticky">
+      <div class="sticky-arrow arrow-donw" id="sticky-arrow">
+        <i class="bx bx-chevron-up"></i>
+      </div>
+
+      <div class="sticky-body body-donw">
+        <p>Would you like to help us make improvements to this website?</p>
+        <p>
+          Please take a minute to answer the following questions. It won't take
+          long and your responses will help us build a better experience for all
+          supporters.
+        </p>
+        <div class="next">Next ></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
